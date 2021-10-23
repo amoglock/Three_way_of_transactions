@@ -25,7 +25,7 @@ contract Transactions {
    modifier checkOwnerAndAccept {
       require(msg.pubkey() == tvm.pubkey(), 100);
       tvm.accept();
-		_;
+	_;
 	}
 
    // Transfer function and commission at my expense.
